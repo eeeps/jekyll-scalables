@@ -49,7 +49,7 @@ Scalable-tag.rb uses ImageMagick to generate lower-resolution files by progressi
 
 Jekyll doesn't like things other than posts in its `_posts` directory, which can make post-specific assets a pain.
 
-So in addition to accepting absolute and relative paths, if the tag appears in a Jekyll post and references a relative path, scalable-tag.rb will look for the full-res image in a folder with the same name as the post, in a root-level 'assets' directory. For instance, if the following post …
+So in addition to accepting absolute and relative paths, if the tag appears in a Jekyll post and references a relative path, scalable-tag.rb will look for the full-res image in a folder with the same name as the post, in a root-level `assets` directory. For instance, if the following post …
 
 ```
 /_posts/2013-07-13-lucky-thirteen.html
@@ -61,7 +61,7 @@ So in addition to accepting absolute and relative paths, if the tag appears in a
 {% scalable jackpot.jpg alt="Jackpot!" %}
 ```
 
-`scalable-tag.rb` would look for the image here:
+scalable-tag.rb would look for the image here:
 
 ```
 /assets/2013-07-13-lucky-thirteen/jackpot.jpg
