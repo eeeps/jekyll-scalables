@@ -1,6 +1,6 @@
 # scalable-tag.rb
 
-scalable-tag.rb and [scalables.js](https://github.com/eeeps/scalables), make inserting a responsive image into a Jekyll-powered site as easy as pointing to a full-resolution source file:
+scalable-tag.rb and [scalables.js](https://github.com/eeeps/scalables) make inserting a responsive image into a Jekyll-powered site as easy as pointing to a full-resolution source file:
 
 ```
 {% scalable /path/to/image.jpg alt="it's responsive!" %}
@@ -41,13 +41,13 @@ And the following markup:
 </div>
 ```
 
-…a completely portable chunk of plain-jane markup that scalables.js will progressively enhance, loading a reasonably-sized image for any user, through any viewport on any device, within any layout, without modification (woo).
+…a completely portable chunk of plain-jane markup that scalables.js will progressively enhance, loading a reasonably-sized image for any user, through any viewport, on any device, within any layout, without modification (woo).
 
 Scalable-tag.rb uses ImageMagick to generate lower-resolution files by progressively halving the file's resolution until it reaches a pre-defined, global, thumbnail-max-dimension (96px by default).
 
 ## input paths
 
-Jekyll doesn't like things other than posts in its `_posts` directory, which can make post-specific assets a pain.
+Jekyll doesn't like things that aren't posts in its `_posts` directory, which can make post-specific assets a pain.
 
 So in addition to accepting absolute and relative paths, if the tag appears in a Jekyll post and references a relative path, scalable-tag.rb will look for the full-res image in a folder with the same name as the post, in a root-level `assets` directory. For instance, if the following post …
 
