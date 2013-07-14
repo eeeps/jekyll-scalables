@@ -67,7 +67,7 @@ scalable-tag.rb would look for the image here:
 /assets/2013-07-13-lucky-thirteen/jackpot.jpg
 ```
 
-## cacheing
+## caching
 
 scalable-tag.rb puts the generated, downsized images into a sub-directory with the same name as the image; it also sticks the paths, dimensions, and filesizes of these images into a sidecar `_info.yml` file in the same sub-directory.
 
